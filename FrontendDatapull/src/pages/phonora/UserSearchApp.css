@@ -1,0 +1,122 @@
+/* Styles pour la carte Leaflet */
+.leaflet-container {
+    height: 100%;
+    width: 100%;
+    border-radius: 8px;
+    z-index: 1;
+  }
+  
+  /* Pour s'assurer que le sélecteur de carte est au-dessus d'autres éléments */
+  .leaflet-pane,
+  .leaflet-control,
+  .leaflet-top,
+  .leaflet-bottom {
+    z-index: 40 !important;
+  }
+  
+  /* Style pour la sélection de ville */
+  .city-selection-chip {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, #f15f79 0%, #b24592 100%);
+    color: white;
+    padding: 3px 8px;
+    border-radius: 16px;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  /* Assurez-vous que le Dialog de Material-Tailwind a un z-index plus élevé que les composants Leaflet */
+  .material-dialog {
+    z-index: 9999 !important;
+  }
+
+.department-label {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.2);
+  padding: 2px 4px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.custom-div-icon {
+  background: none;
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
+/* src/pages/dashboard/UserSearchApp.css */
+
+/* Styles pour le tableau */
+.search-results-table {
+  
+  border-collapse: separate;
+  border-spacing: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+
+
+.search-results-table th {
+ 
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.search-results-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+
+
+.search-results-table td {
+  color: #374151;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+
+
+.protected-data:hover {
+  background-color: #b4bccb;
+}
+
+/* Styles pour la pagination */
+.pagination-button {
+  min-width: 32px;
+  height: 32px;
+  padding: 0;
+  font-size: 14px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  
+}
+
+
+.pagination-button.filled {
+  background-color: #f15f79;
+  color: #ffffff;
+  border: none;
+}
+
+.pagination-button.outlined {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+/* Style pour la carte */
+
+
+
